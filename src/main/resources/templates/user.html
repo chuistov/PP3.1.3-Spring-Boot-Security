@@ -29,7 +29,7 @@
 
 <br/>
 
-<security:authorize access="hasRole('ROLE_ADMIN')">
+<security:authorize access="hasRole('ROLE_ADMIN')"> <!--НЕ РАБОТАЕТ-->
     <form th:method="GET" th:action="@{/admin}">
         <input type="submit" value="Admin page">
     </form>
