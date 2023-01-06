@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns:security="http://www.springframework.org/security/tags">
+      xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/users_style.css"/>
@@ -29,11 +29,11 @@
 
 <br/>
 
-<security:authorize access="hasRole('ROLE_ADMIN')"> <!--НЕ РАБОТАЕТ-->
+<div sec:authorize="hasRole('ROLE_ADMIN')">
     <form th:method="GET" th:action="@{/admin}">
         <input type="submit" value="Admin page">
     </form>
-</security:authorize>
+</div>
 
 <br/>
 

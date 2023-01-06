@@ -9,9 +9,11 @@
     <h3>
         Welcome to Nikolay Chuistov's first web app! Feel free to explore it.
     </h3>
-    <p>
-        If you don't want to sign in you can use login "anna@gmail.com" and password "anna".
-    </p>
+    <p>If you don't want to sign in you can use the following existing users:</p>
+    <p> login "anna@gmail.com", password "anna" - roles "ADMIN" and "USER"</p>
+    <p> login "ivan@gmail.com", password "ivan" - role "USER" only</p>
+    <p> login "peter@gmail.com", password "peter" - role "ADMIN" only</p>
+    <p>Enjoy!</p>
 
     <form name="f" method="post" action="/process_login">
         <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
